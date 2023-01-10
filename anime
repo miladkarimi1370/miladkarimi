@@ -1,0 +1,56 @@
+ <div class="col-sm-12 col-md-6 bg-warning d-flex flex-column justify-content-between align-items-center pb-5 pt-5 anime-tabcontent-style">
+             <div class="custom-tabcontent-style"><img src="img/drail.png" alt="drail"></div>
+             <h4>دریل ماکیتا مدل B-4000 </h4>
+             <p>ساخت کشور چین  ( تحت لیسانس ماکیتا ژاپن )</p>
+             <p>قیمت این محصول <s class="text-danger price-tab-content">3300000 تومان</s><span class="text-success">2600000 تومان </span></p>
+             <h6>12 ماه ضمانت تعویض و پس از آن 24 ماه ضمانت خدمات پس از فروش</h6>
+             <button type="button" class="btn btn-danger align-self-stretch">اضافه کردن به سبد خرید </button>
+             <div class="star-rate pt-3">
+              <i class="far fa-star mr-2"></i><i class="far fa-star mr-2"></i><i class="far fa-star mr-2"></i><i class="far fa-star mr-2"></i><i class="far fa-star mr-2"></i>
+             </div>
+             <h3 class="custom-brand">MAKITA</h3>
+            </div>
+            
+            .custom-tabcontent-style{
+    perspective: 200px;
+}
+.custom-tabcontent-style img{
+    width: 20rem;
+    transform-style: preserve-3d;
+    transform: rotateY(5deg);
+}
+.star-rate i:hover{
+    color: aliceblue;
+}
+.custom-brand{
+    letter-spacing: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(219, 71, 71);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    transform: rotate(-43deg);
+    top: 6rem;
+    left: 1rem;
+animation: brightbrand 0.4s 2s infinite paused;
+}
+.anime-tabcontent-style:hover .custom-brand{
+    animation-play-state: running;
+}
+@keyframes brightbrand {
+ 0%{transform: rotate(-43deg);}
+ 10%{transform: rotate(-50deg);}
+ 20%{transform: rotate(-40deg);}
+ 30%{transform: rotate(-50deg);}
+ 40%{transform: rotate(-40deg);}
+50%{transform: rotate(-50deg);}
+60%{transform: rotate(-40deg);}
+ 70%{transform: rotate(-50deg);}
+ 80%{transform: rotate(-40deg);}
+ 90%{transform: rotate(-50deg);}
+ 100%{transform: rotate(-43deg);}
+}
+.price-tab-content{
+    padding: 0 0.5rem;
+}
